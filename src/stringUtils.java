@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class stringUtils {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Give me a string");
+        System.out.print("Enter Something: ");
         String input = sc.nextLine();
 
         boolean isNumber = StringUtils.containsOnly(input, "1234567890");
@@ -14,12 +14,14 @@ public class stringUtils {
         System.out.println("You Entered: " + input);
 
         if(isNumber){
-            System.out.println(input + " is a number");
+            System.out.println("\"" + input + "\" is a number");
         } else if(isL33t){
-            System.out.println(input + " is not proper English");
+            System.out.println("\"" + input + "\" is not proper English");
         } else {
-            System.out.println(input + " is not a number");
+            System.out.println("\"" + input + "\" is not a number");
         }
+
+        System.out.println();
 
         String swapInputCase = StringUtils.swapCase(input);
         System.out.println("Flipped Case: " + swapInputCase);
