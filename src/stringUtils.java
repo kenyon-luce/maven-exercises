@@ -11,7 +11,7 @@ public class stringUtils {
         boolean isNumber = StringUtils.containsOnly(input, "1234567890");
         boolean isL33t = StringUtils.containsAny(input, "1234567890");
 
-        System.out.println("You Entered: " + input);
+        System.out.println("You Entered: \"" + input + "\"");
 
         if(isNumber){
             System.out.println("\"" + input + "\" is a number");
